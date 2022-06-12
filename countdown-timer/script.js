@@ -3,7 +3,7 @@ hrsEl = document.getElementById("hrs");
 minsEl = document.getElementById("mins");
 secsEl = document.getElementById("secs");
 
-christmas = "25 Dec 2021";
+christmas = "29 May 2021";
 
 function countdown() {
     const christmasDate = new Date(christmas);
@@ -28,6 +28,7 @@ function countdown() {
     minsEl.innerHTML = mins;
     secsEl.innerHTML = secs;
 
+    console.log(days)
 }
 
 countdown();
