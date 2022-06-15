@@ -16,11 +16,13 @@ import Inline from './components/Inline';
 import './appStyles.css'
 import styles from './appStyles.module.css'
 import Form from './components/Form';
+import LifecycleA from './components/LifecycleA';
 
 function App() {
   return (
     <div className="App">
-      <Form />
+      <LifecycleA />
+      {/* <Form /> */}
       {/* <h1 className="error">Error</h1> */}
 
       {/* can not put module.css on children */}
