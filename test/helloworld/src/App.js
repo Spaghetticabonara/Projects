@@ -33,7 +33,7 @@ import HoverCounter from './components/HoverCounter';
 function App() {
   return (
     <div className="App">
-      <ClickCounter />
+      <ClickCounter name='Peach' />
       <HoverCounter />
     </div>
   );
