@@ -25,42 +25,24 @@ import RefsDemo from './components/RefsDemo';
 import FocusInput from './components/FocusInput';
 import FRParentInput from './components/FRParentInput';
 import PortalDemo from './components/PortalDemo';
+import Hero from './components/Hero';
+import ErrorBoundary from './components/ErrorBoundary';
 
 function App() {
   return (
     <div className="App">
-      <PortalDemo />
-      {/* <ParentComp /> */}
-      {/* <Table /> */}
-      {/* <FragmentDemo /> */}
-      {/* <LifecycleA /> */}
-      {/* <Form /> */}
-      {/* <h1 className="error">Error</h1> */}
+      <ErrorBoundary>
+        <Hero heroName="Batman" />
+      </ErrorBoundary>
 
-      {/* can not put module.css on children */}
-      {/* <h1 className={styles.success}>Success</h1> */}
+      <ErrorBoundary>
+        <Hero heroName="Superman" />
+      </ErrorBoundary>
 
-      {/* <Inline /> */}
-      {/* <Stylesheet primary={true} /> */}
-      {/* <NameList /> */}
-      {/* <UserGreeting /> */}
-      {/* <ParentComponent /> */}
-      {/* <EventBind /> */}
-      {/* <FunctionClick /> */}
-      {/* <ClassClick /> */}
-      {/* <Counter /> */}
-      {/* <Message /> */}
-      {/* <Greet name="Bruce" heroName="Batman">
-        <p>This is children props</p>
-      </Greet> */}
-      {/* <Greet name="Clark" heroName="Superman">
-        <button>Action</button>
-      </Greet> */}
-      {/* <Greet name="Diana" heroName="Wonder Woman" /> */}
-      {/* <Welcome name="Bruce" heroName="Batman" /> */}
-      {/* <Welcome name="Clark" heroName="Superman" />
-      <Welcome name="Diana" heroName="Wonder Woman" /> */}
-      {/* <Hello /> */}
+      <ErrorBoundary>
+        <Hero heroName="Joker" />
+      </ErrorBoundary>
+
     </div>
   );
 }
