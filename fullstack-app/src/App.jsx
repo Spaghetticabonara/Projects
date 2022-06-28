@@ -11,7 +11,7 @@ function App() {
         const response = await fetch("http://localhost:3001/");
         const data = await response.json();
         setUsers(data.users);
-        // console.log(data);
+        console.log(users);
       } catch (err) {
         console.log("Something went wrong. ", err);
       }
