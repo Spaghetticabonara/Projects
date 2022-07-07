@@ -1,6 +1,7 @@
 import './App.css';
 import ClassCounter from './components/ClassCounter';
 import ClassCounterOne from './components/ClassCounterOne';
+import DataFetching from './components/DataFetching';
 import HookCounter from './components/HookCounter';
 import HookCounterFour from './components/HookCounterFour';
 import HookCounterOne from './components/HookCounterOne';
@@ -15,7 +16,7 @@ function App() {
     <div className="App">
       {/* <ClassCounter /> */}
       {/* <ClassCounterOne /> */}
-      <IntervalHookCounter />
+      <DataFetching />
     </div>
   );
 }
